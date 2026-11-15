@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Centjes – Keyword Research Tool</title>
+<meta name="description" content="Centjes is a private, single-user tool for retrieving keyword search volumes for self-published books.">
+<style>
+  :root { --bg:#fbfaf7; --fg:#1f2328; --muted:#5b636d; --accent:#2f6f4f; --line:#e4e1da; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16181b; --fg:#e8e6e1; --muted:#a3a9b0; --accent:#7cc39c; --line:#2c3035; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 64px 16px; }
+  h1 { font-size: 2.2rem; margin: 0 0 .25em; letter-spacing: -.02em; }
+  .tag { color: var(--muted); margin: 0 0 2.5em; }
+  h2 { font-size: 1.1rem; margin: 2em 0 .5em; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2em; }
+  footer { margin-top: 4em; padding-top: 1.5em; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Centjes</h1>
+  <p class="tag">A private keyword research tool for self-published books.</p>
+
+  <h2>What it does</h2>
+  <p>Centjes is a small command-line tool used by a single independent author. It retrieves average monthly search volumes and competition levels for book-related keywords (for example “mandala coloring book”) from the author's own Google Ads account, using the Google Ads API Keyword Planning services.</p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>The owner signs in once with Google (OAuth) and grants read access to their own Google Ads account.</li>
+    <li>The tool requests historical keyword metrics and keyword ideas for a list of keywords.</li>
+    <li>Results are shown in the terminal and optionally saved to a local CSV file.</li>
+    <li>The tool does not create, change or manage campaigns, ads or budgets.</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>Centjes is not a public service. It is used only by its owner and accesses only Google Ads accounts the owner manages.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · Contact: <a href="mailto:joepvanschagen34@gmail.com">joepvanschagen34@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
